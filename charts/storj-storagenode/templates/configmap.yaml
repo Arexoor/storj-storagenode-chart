@@ -10,5 +10,5 @@ data:
   EMAIL: {{ required "Provide an email address" .email }}
   ADDRESS: {{ required "The address to connect to your node" .address }}
   STORAGE: {{ .storage }}
-  SETUP: {{ .setup }}
+  SETUP: "{{ .setup | quote }}"
   {{- end }}
