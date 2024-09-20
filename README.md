@@ -59,7 +59,7 @@ Parameter | Description | Default | Required
 `config.email` | Email address used by Storj  | `nil` | yes
 `config.address` | (domain\|ip):port for external communication | `nil` | yes
 `config.storage` | Storage size allocated  | `1TB` | no
-`config.wallet_features` | configure L2 Payments with zkSync Era  | `nil` | no
+`config.enable_zksync_wallet` | configure L2 Payments with zkSync Era  | `false` | no
 `config.setup` | setup new node on first run  | `false` | no
 `service.storagenode.type` | Service type for the storagenode | `NodePort` | no
 `service.storagenode.annotations` | Service annotations | `{}` | no

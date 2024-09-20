@@ -34,6 +34,10 @@ spec:
             {{- toYaml .securityContext | nindent 12 }}
           image: "{{ .image.repository }}"
           imagePullPolicy: {{ .image.pullPolicy }}
+          {{- if .enable_zksync_wallet }}
+          args:
+            - "--operator.wallet-features=zksync-era"
+          {{- end }}
           {{- end }}
           ports:
             - name: storagenode

@@ -11,5 +11,4 @@ data:
   ADDRESS: {{ required "The address to connect to your node" .address }}
   STORAGE: {{ .storage }}
   SETUP: "{{ .setup }}"
-  operator.wallet-features: "{{ .wallet_features }}"
   {{- end }}

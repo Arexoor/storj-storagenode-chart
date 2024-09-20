@@ -32,6 +32,8 @@ storagenode:
     repository: storjlabs/storagenode:latest
     pullPolicy: Always
 
+  enable_zksync_wallet: false
+
   securityContext:
     {}
     # capabilities:
@@ -125,7 +127,6 @@ config:
   # address: "storagenodeaddress.net:28967"
   storage: "1TB"
   setup: false
-  wallet_features: ""
 
 identity:
   externalSecret:
